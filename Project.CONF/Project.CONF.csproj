@@ -51,14 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options\BaseConfiguration.cs" />
+    <Compile Include="Options\LandViewRoomConfiguration.cs" />
+    <Compile Include="Options\ProfileConfiguration.cs" />
+    <Compile Include="Options\RoomConfiguration.cs" />
+    <Compile Include="Options\SuitRoomConfiguration.cs" />
+    <Compile Include="Options\UserConfiguration.cs" />
+    <Compile Include="Options\WithASeaViewRoomConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Options\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.ENTITIES\Project.ENTITIES.csproj">
+      <Project>{47A600FD-62B0-462B-92EC-1E096BA97377}</Project>
+      <Name>Project.ENTITIES</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
