@@ -1,4 +1,5 @@
 ﻿using Project.ENTITIES.Enums;
+using System.Collections.Generic;
 
 namespace Project.ENTITIES.Models
 {
@@ -19,5 +20,7 @@ namespace Project.ENTITIES.Models
 		// Relatioanl properties
 
 		public virtual User User { get; set; }
+
+		public virtual List<Reservation> Reservations { get; set; }
 	}
 }

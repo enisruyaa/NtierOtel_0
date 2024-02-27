@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\GenericRepository\ConsRep\ReservationRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\RoomRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserProfileRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserRepository.cs" />

@@ -44,6 +44,7 @@
     <Compile Include="Enums\DataStatus.cs" />
     <Compile Include="Enums\RoomStatus.cs" />
     <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserProfile.cs" />

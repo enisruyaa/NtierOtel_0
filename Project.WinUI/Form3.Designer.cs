@@ -108,6 +108,7 @@
             this.cmbOdaTipi.Name = "cmbOdaTipi";
             this.cmbOdaTipi.Size = new System.Drawing.Size(137, 21);
             this.cmbOdaTipi.TabIndex = 3;
+            this.cmbOdaTipi.Click += new System.EventHandler(this.cmbOdaTipi_Click);
             // 
             // label4
             // 
@@ -144,6 +145,7 @@
             this.btnRandevuYap.TabIndex = 5;
             this.btnRandevuYap.Text = "Rezervasyon Yap";
             this.btnRandevuYap.UseVisualStyleBackColor = true;
+            this.btnRandevuYap.Click += new System.EventHandler(this.btnRandevuYap_Click);
             // 
             // lstRandevular
             // 
@@ -194,6 +196,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrKisiSayisi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

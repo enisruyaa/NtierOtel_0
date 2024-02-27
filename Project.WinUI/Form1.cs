@@ -46,7 +46,7 @@ namespace Project.WinUI
                 DialogResult dr = MessageBox.Show("Giriş Yapmak İster Misiniz", "Kayıt Başarıyla Oluşturulmuştur ",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
-                    Form2 frm2 = new Form2();
+                    Form2 frm2 = new Form2(_uR);
                     frm2.ShowDialog();
                 }
                 else
@@ -59,7 +59,7 @@ namespace Project.WinUI
 
         private void label4_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
+            Form2 frm2 = new Form2(_uR);
             frm2.ShowDialog();
         }
     }

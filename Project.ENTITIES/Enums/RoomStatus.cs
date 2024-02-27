@@ -2,8 +2,8 @@
 {
 	public enum RoomStatus
 	{
-		AllInclusive = 1,
-		RoomBreakfast = 2,
-		HalfPortion = 3
+		HerŞeyDahil = 1,
+		OdaKahvaltı = 2,
+		YarımPansiyon = 3
 	}
 }

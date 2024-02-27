@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Options\BaseConfiguration.cs" />
     <Compile Include="Options\ProfileConfiguration.cs" />
+    <Compile Include="Options\ReservationConfiguration.cs" />
     <Compile Include="Options\RoomConfiguration.cs" />
     <Compile Include="Options\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

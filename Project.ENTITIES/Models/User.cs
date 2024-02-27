@@ -13,5 +13,6 @@ namespace Project.ENTITIES.Models
 		public virtual UserProfile UserProfile { get; set; }
 
 		public virtual List<Room> Rooms { get; set; }
+		public virtual List<Reservation> Reservations { get; set; }
 	}
 }
