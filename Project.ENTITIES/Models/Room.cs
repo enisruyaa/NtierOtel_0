@@ -2,13 +2,15 @@
 
 namespace Project.ENTITIES.Models
 {
-	public abstract class Room : BaseEntity
+	public class Room : BaseEntity
 	{
 		public string RoomNo { get; set; }
 
 		public decimal Price { get; set; } // Databaseye geçreken bu decimal'ın money olarak değiştirilmesi gerekmektedir.
 
-		public int UserNumber { get; set; }
+        public string RoomType { get; set; }
+
+        public int UserNumber { get; set; }
 
 		public int? UserID { get; set; }
 

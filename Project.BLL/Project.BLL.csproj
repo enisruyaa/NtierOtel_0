@@ -51,12 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DesignPatterns\GenericRepository\ConsRep\LandViewRoomRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\RoomRepository.cs" />
-    <Compile Include="DesignPatterns\GenericRepository\ConsRep\SuitRoomRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserProfileRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserRepository.cs" />
-    <Compile Include="DesignPatterns\GenericRepository\ConsRep\WithASeaViewRoomRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\EFBaseRep\BaseRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\IntRep\IRepository.cs" />
     <Compile Include="DesignPatterns\SingletonPattern\DBTool.cs" />

@@ -52,12 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Options\BaseConfiguration.cs" />
-    <Compile Include="Options\LandViewRoomConfiguration.cs" />
     <Compile Include="Options\ProfileConfiguration.cs" />
     <Compile Include="Options\RoomConfiguration.cs" />
-    <Compile Include="Options\SuitRoomConfiguration.cs" />
     <Compile Include="Options\UserConfiguration.cs" />
-    <Compile Include="Options\WithASeaViewRoomConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
