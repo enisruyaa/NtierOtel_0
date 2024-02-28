@@ -13,14 +13,13 @@ namespace Project.ENTITIES.Models
 
         public int UserNumber { get; set; }
 
-		public int? UserID { get; set; }
-
 		public RoomStatus RoomStatus { get; set; }
+
+		public int? ReservationID { get; set; }
 
 		// Relatioanl properties
 
-		public virtual User User { get; set; }
+		public virtual Reservation Reservation { get; set; }
 
-		public virtual List<Reservation> Reservations { get; set; }
 	}
 }

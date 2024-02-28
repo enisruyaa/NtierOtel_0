@@ -2,7 +2,7 @@
 {
 	public enum RoomStatus
 	{
-		HerŞeyDahil = 1,
+		HerSeyDahil = 1,
 		OdaKahvaltı = 2,
 		YarımPansiyon = 3
 	}
