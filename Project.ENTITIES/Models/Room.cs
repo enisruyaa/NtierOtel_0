@@ -15,11 +15,10 @@ namespace Project.ENTITIES.Models
 
 		public RoomStatus RoomStatus { get; set; }
 
-		public int? ReservationID { get; set; }
 
 		// Relatioanl properties
 
-		public virtual Reservation Reservation { get; set; }
+		public virtual List<RoomReservation> RoomReservations { get; set; }
 
 	}
 }

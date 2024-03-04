@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\ReservationRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\RoomRepository.cs" />
+    <Compile Include="DesignPatterns\GenericRepository\ConsRep\RoomReservationRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserProfileRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConsRep\UserRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\EFBaseRep\BaseRepository.cs" />

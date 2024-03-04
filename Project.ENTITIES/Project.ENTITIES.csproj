@@ -46,6 +46,7 @@
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomReservation.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -18,30 +18,14 @@ namespace Project.ENTITIES.Models
 
         public decimal Fiyat { get; set; }
 
-        public Room SecilenOda { get; set; }
-
         public int? UserID { get; set; }
 
         // Relational Properties
 
-        public virtual List<Room> Rooms { get; set; }
+        public virtual List<RoomReservation> RoomReservations { get; set; }
 
         public virtual User User { get; set; }
 
 
-        public int TutarHesapla()
-        {
-            Fiyat = SecilenOda.Price;
-            switch (SecilenKonaklama)
-            {
-                case RoomStatus.HerSeyDahil:
-                    Fiyat += 500;
-                    break;
-                case RoomStatus.YarımPansiyon:
-                    Fiyat += 100;
-                    break;
-            }
-            return Convert.ToInt32(Fiyat);
-        }
     }
 }

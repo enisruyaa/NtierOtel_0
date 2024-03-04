@@ -36,15 +36,11 @@ namespace Project.WinUI
             r.GirisTarihi = dtGirisTarihi.Value.Date;
             r.CikisTarihi = dtGirisTarihi.Value.Date;
             gunSayisi = r.CikisTarihi - r.GirisTarihi;
-            return Convert.ToInt32(gunSayisi);
+            return gunSayisi.Days;
         }
 
         int _hesap = 0;
 
-        public void ToplamHesap()
-        {
-            _hesap = GunHesapla() * r.TutarHesapla();
-        }
 
         private void btnRandevuYap_Click(object sender, System.EventArgs e)
         {
