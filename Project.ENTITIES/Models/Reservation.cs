@@ -26,6 +26,17 @@ namespace Project.ENTITIES.Models
 
         public virtual User User { get; set; }
 
-
+        public void KonaklamaHesabi()
+        {
+            switch (SecilenKonaklama)
+            {
+                case RoomStatus.HerSeyDahil:
+                    Fiyat += 500;
+                    break;
+                case RoomStatus.OdaKahvaltı:
+                    Fiyat += 250;
+                    break;
+            }
+        }
     }
 }

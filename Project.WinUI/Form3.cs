@@ -41,13 +41,21 @@ namespace Project.WinUI
 
         int _hesap = 0;
 
+        public void Hesapla()
+        {
+           
+        }
 
         private void btnRandevuYap_Click(object sender, System.EventArgs e)
         {
-            r.GirisTarihi = dtGirisTarihi.Value.Date;
-            r.CikisTarihi = dtGirisTarihi.Value.Date;
-            r.KisiSayisi = Convert.ToInt32(nmrKisiSayisi.Value);
-            lstRandevular.DataSource = r;
+            if (cmbKonaklamaTipi.SelectedIndex > -1 && cmbOdaTipi.SelectedIndex > -1  )
+            {
+                r.GirisTarihi = dtGirisTarihi.Value.Date;
+                r.CikisTarihi = dtGirisTarihi.Value.Date;
+                r.KisiSayisi = Convert.ToInt32(nmrKisiSayisi.Value);
+                lstRandevular.DataSource = r;
+            }
+            else MessageBox.Show("Lütfen Gerekli Olan Kısımları Seçiniz");
         }
 
         private void cmbOdaTipi_Click(object sender, EventArgs e)
