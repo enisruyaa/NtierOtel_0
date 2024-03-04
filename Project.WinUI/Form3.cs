@@ -44,6 +44,7 @@ namespace Project.WinUI
         public void Hesapla()
         {
            
+           
         }
 
         private void btnRandevuYap_Click(object sender, System.EventArgs e)
