@@ -34,17 +34,18 @@ namespace Project.WinUI
         {
             
             r.GirisTarihi = dtGirisTarihi.Value.Date;
-            r.CikisTarihi = dtGirisTarihi.Value.Date;
+            r.CikisTarihi = dtCikisTarihi.Value.Date;
             gunSayisi = r.CikisTarihi - r.GirisTarihi;
             return gunSayisi.Days;
         }
 
         int _hesap = 0;
 
-        public void Hesapla()
+        public string Hesapla()
         {
-           
-           
+            _hesap += (Convert.ToInt32(_secilenOda.Price) * GunHesapla())* Convert.ToInt32(nmrKisiSayisi.Value);
+            return _hesap.ToString();
+                
         }
 
         private void btnRandevuYap_Click(object sender, System.EventArgs e)
@@ -52,16 +53,21 @@ namespace Project.WinUI
             if (cmbKonaklamaTipi.SelectedIndex > -1 && cmbOdaTipi.SelectedIndex > -1  )
             {
                 r.GirisTarihi = dtGirisTarihi.Value.Date;
-                r.CikisTarihi = dtGirisTarihi.Value.Date;
+                r.CikisTarihi = dtCikisTarihi.Value.Date;
                 r.KisiSayisi = Convert.ToInt32(nmrKisiSayisi.Value);
-                lstRandevular.DataSource = r;
+                Hesapla();
+                Text = Hesapla();
             }
-            else MessageBox.Show("Lütfen Gerekli Olan Kısımları Seçiniz");
+            else MessageBox.Show("Lütfen Rezervasyon Yapmak İçin Boş Alan Bırakmayınız");
         }
 
+        Room _secilenOda;
         private void cmbOdaTipi_Click(object sender, EventArgs e)
         {
-            
+            if (cmbOdaTipi.SelectedIndex > -1)
+            {
+                _secilenOda = cmbOdaTipi.SelectedItem as Room;
+            }
         }
     }
 }

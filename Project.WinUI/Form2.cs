@@ -15,20 +15,21 @@ namespace Project.WinUI
 			InitializeComponent();
 			_uR = ur;
 		}
-		private void button1_Click(object sender, System.EventArgs e)
-		{
-			if (txtKullaniciAdi.Text == "Admin" && txtSifre.Text == "123")
-			{
-				Form4 frm4 = new Form4();
-				frm4.ShowDialog();
-			}
-			else if (_uR.Any(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text)) 
-			{
-				MessageBox.Show($"Hoşgeldin ");
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text == "Admin" && txtSifre.Text == "123")
+            {
+                Form4 frm4 = new Form4();
+                frm4.ShowDialog();
+            }
+            else if (_uR.Any(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text))
+            {
+                MessageBox.Show($"Hoşgeldin -> {txtKullaniciAdi.Text} ");
                 Form3 frm3 = new Form3();
                 frm3.ShowDialog();
-			}
-			else MessageBox.Show("Böyle bir üye bulunamadı");
-		}
-	}
+            }
+            else MessageBox.Show("Böyle bir üye bulunamadı");
+        }
+    }
 }

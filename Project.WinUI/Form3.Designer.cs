@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblKullanici = new System.Windows.Forms.Label();
             this.dtGirisTarihi = new System.Windows.Forms.DateTimePicker();
-            this.dtCikis = new System.Windows.Forms.DateTimePicker();
+            this.dtCikisTarihi = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbOdaTipi = new System.Windows.Forms.ComboBox();
@@ -74,12 +74,12 @@
             this.dtGirisTarihi.Size = new System.Drawing.Size(200, 20);
             this.dtGirisTarihi.TabIndex = 1;
             // 
-            // dtCikis
+            // dtCikisTarihi
             // 
-            this.dtCikis.Location = new System.Drawing.Point(12, 114);
-            this.dtCikis.Name = "dtCikis";
-            this.dtCikis.Size = new System.Drawing.Size(200, 20);
-            this.dtCikis.TabIndex = 1;
+            this.dtCikisTarihi.Location = new System.Drawing.Point(12, 114);
+            this.dtCikisTarihi.Name = "dtCikisTarihi";
+            this.dtCikisTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dtCikisTarihi.TabIndex = 1;
             // 
             // label2
             // 
@@ -189,7 +189,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dtCikis);
+            this.Controls.Add(this.dtCikisTarihi);
             this.Controls.Add(this.dtGirisTarihi);
             this.Controls.Add(this.lblKullanici);
             this.Controls.Add(this.label1);
@@ -208,7 +208,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblKullanici;
         private System.Windows.Forms.DateTimePicker dtGirisTarihi;
-        private System.Windows.Forms.DateTimePicker dtCikis;
+        private System.Windows.Forms.DateTimePicker dtCikisTarihi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbOdaTipi;
