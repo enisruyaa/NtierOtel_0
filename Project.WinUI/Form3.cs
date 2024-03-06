@@ -62,7 +62,8 @@ namespace Project.WinUI
         }
 
         Room _secilenOda;
-        private void cmbOdaTipi_Click(object sender, EventArgs e)
+
+        private void cmbOdaTipi_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbOdaTipi.SelectedIndex > -1)
             {

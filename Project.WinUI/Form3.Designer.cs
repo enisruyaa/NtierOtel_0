@@ -108,7 +108,7 @@
             this.cmbOdaTipi.Name = "cmbOdaTipi";
             this.cmbOdaTipi.Size = new System.Drawing.Size(137, 21);
             this.cmbOdaTipi.TabIndex = 3;
-            this.cmbOdaTipi.Click += new System.EventHandler(this.cmbOdaTipi_Click);
+            this.cmbOdaTipi.SelectedIndexChanged += new System.EventHandler(this.cmbOdaTipi_SelectedIndexChanged);
             // 
             // label4
             // 
